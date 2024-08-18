@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Finanzas Personales</title>
+    <link rel="stylesheet" href="nuevoapp.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#info">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Inicio -->
+        <section id="home" class="container">
+            <h1>Bienvenido a la Plataforma de Finanzas Personales</h1>
+            <p>Explora nuestras herramientas y consejos para mejorar tu salud financiera.</p>
+            <button id="loginBtn">Iniciar Sesión</button>
+            <button id="registerBtn">Registrarse</button>
+
+            <!-- Iniciar Sesión -->
+            <div id="loginForm" class="form-section" style="display: none;">
+                <h2>Iniciar Sesión</h2>
+                <form>
+                    <label for="loginEmail">Correo Electrónico:</label>
+                    <input type="email" id="loginEmail" required>
+                    <label for="loginPassword">Contraseña:</label>
+                    <input type="password" id="loginPassword" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+
+            <!-- Registrarse -->
+            <div id="registerForm" class="form-section" style="display: none;">
+                <h2>Registrarse</h2>
+                <form>
+                    <label for="registerName">Nombre:</label>
+                    <input type="text" id="registerName" required>
+                    <label for="registerEmail">Correo Electrónico:</label>
+                    <input type="email" id="registerEmail" required>
+                    <label for="registerPassword">Contraseña:</label>
+                    <input type="password" id="registerPassword" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="container" style="display: none;">
+            <h2>Dashboard</h2>
+            <button id="budgetBtn">Calculadora de Presupuesto</button>
+            <button id="savingsBtn">Planificador de Ahorros</button>
+
+            <div id="budgetSection" style="display: none;">
+                <h3>Calculadora de Presupuesto</h3>
+                <form id="budgetForm">
+                    <label for="income">Ingreso Mensual:</label>
+                    <input type="number" id="income" required>
+                    <label for="expenses">Gastos Mensuales:</label>
+                    <input type="number" id="expenses" required>
+                    <button type="submit">Calcular</button>
+                </form>
+                <p id="budgetResult"></p>
+            </div>
+
+            <div id="savingsSection" style="display: none;">
+                <h3>Planificador de Ahorros</h3>
+                <form id="savingsForm">
+                    <label for="targetAmount">Monto Objetivo:</label>
+                    <input type="number" id="targetAmount" required>
+                    <label for="monthlySavings">Ahorro Mensual:</label>
+                    <input type="number" id="monthlySavings" required>
+                    <button type="submit">Calcular</button>
+                </form>
+                <p id="savingsResult"></p>
+            </div>
+        </section>
+
+        <!-- Información -->
+        <section id="info" class="container" style="display: none;">
+            <h2>Información de Interés</h2>
+            <h3>Vida Financiera Sana</h3>
+            <p>Una vida financiera sana es clave para alcanzar la estabilidad y el bienestar a largo plazo. No solo se trata de ganar dinero, sino de administrarlo de manera efectiva para lograr un equilibrio entre ingresos, gastos, ahorros e inversiones. A continuación, te ofrecemos una guía completa para mantener una vida financiera saludable.</p>
+            <img class="imagen" src=https://www.vivemasvidas.com/uploads/consejos-vida-financiera-sana.jpg alt="¿Qué es Invertir?">
+            <h3>Presupuesto y Control de Gastos</h3>
+            <h4>Crear un Presupuesto:</h4>
+            <p>El primer paso hacia una vida financiera sana es elaborar un presupuesto. Un presupuesto te ayuda a planificar cómo gastar tu dinero y te asegura que no gastes más de lo que ingresas. Empieza por listar todos tus ingresos mensuales y luego detalla tus gastos en categorías como vivienda, alimentación, transporte y entretenimiento. Utiliza herramientas como aplicaciones de presupuesto para simplificar el proceso.</p>
+            <img class="imagen" src="https://billeteranews.com/wp-content/uploads/2022/03/Vida-financiera-saludable-750x375-1.jpg" alt="¿Qué es Invertir?">
+            <h4>Registro de Gastos:</h4>
+            <p>Registrar tus gastos diarios es esencial para mantenerte en el camino correcto. Puedes usar una libreta, una hoja de cálculo o aplicaciones móviles para seguir cada gasto. Revisa y ajusta tu presupuesto regularmente para reflejar cambios en tus ingresos o gastos.</p>
+            <img class="imagen" src="https://israelsilvamx.com/wp-content/uploads/2021/10/vidafinanciera.jpg" alt="¿Qué es Invertir?">
+            <h3>Ahorro</h3>
+            <h4>Fondo de Emergencia:</h4>
+            <p>Un fondo de emergencia es una reserva de dinero destinada a cubrir gastos imprevistos, como reparaciones de automóviles o gastos médicos. Idealmente, este fondo debería cubrir de tres a seis meses de tus gastos básicos. Comienza a construirlo ahorrando una pequeña cantidad cada mes hasta alcanzar tu objetivo.</p>
+            <img class="imagen" src="https://susociodenegocios.com/wp-content/uploads/2015/09/planificacion-de-finanzas.jpg" alt="¿Qué es Invertir?">
+            <h4>Metas de Ahorro:</h4>
+            <p>Establece metas de ahorro realistas a corto, mediano y largo plazo. Puedes fijar metas para un viaje, una compra importante o para tu jubilación. La clave es ser específico con tus objetivos y planificar cómo alcanzar cada meta.</p>
+            <img class="imagen" src="https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2021/01/1140-woman-with-calculator-esp.jpg" alt="¿Qué es Invertir?">
+            <h3>Manejo de Deudas</h3>
+            <h4>Tipo de Deudas:</h4>
+            <p>Comprender los diferentes tipos de deudas, como las tarjetas de crédito, préstamos personales y hipotecas, es fundamental. Cada tipo tiene diferentes tasas de interés y condiciones que pueden afectar tu salud financiera.</p>
+            <img class="imagen" src="https://www.lahora.com.ec/wp-content/uploads/2023/12/balance-finanzas-personales-economia-ecuador-e1701953767619.jpg" alt="¿Qué es Invertir?">
+            <h4>Plan de Pago:</h4>
+            <p>Para pagar tus deudas de manera efectiva, considera usar el método de la bola de nieve (pagar primero las deudas más pequeñas) o el método de la avalancha (pagar primero las deudas con mayores tasas de interés). Elige el método que mejor se adapte a tu situación y mantén un plan de pago disciplinado.</p>
+            <img class="imagen" src="https://www.sabermassermas.com/wp-content/uploads/2015/08/habitos-financieros.png" alt="¿Qué es Invertir?">
+            <h3>Inversión</h3>
+            <h4>Introducción a la Inversión:</h4>
+            <p>Invertir es una forma de hacer crecer tu dinero a lo largo del tiempo. Puedes invertir en acciones, bonos, fondos mutuos o bienes raíces. La inversión ayuda a aumentar tu patrimonio y prepararte para el futuro.</p>
+            <img class="imagen" src="https://www.tododisca.com/wp-content/uploads/2023/11/euro-dinero-habito-financiero-bill-gates-inversion-banco-rico.jpg" alt="¿Qué es Invertir?">
+            <h4>Diversificación:</h4>
+            <p>Diversificar tus inversiones significa distribuir tu dinero en diferentes tipos de activos para minimizar riesgos. No pongas todos tus huevos en una sola canasta; en lugar de eso, invierte en una variedad de activos para protegerte contra las fluctuaciones del mercado.</p>
+            <img class="imagen" src="https://generamas.com/wp-content/uploads/2023/01/06-habitos-financieros-1.png" alt="¿Qué es Invertir?">
+            <h3>Educación Financiera</h3>
+            <h4>Recursos Educativos:</h4>
+            <p>La educación financiera es esencial para tomar decisiones informadas sobre tu dinero. Lee libros, toma cursos en línea y sigue blogs sobre finanzas personales. Estos recursos te proporcionarán conocimientos valiosos y te ayudarán a mejorar tu comprensión de las finanzas.</p>
+            <img class="imagen" src="https://generamas.com/wp-content/uploads/2023/05/07-mayo-educacion-financiera-para-inversiones-1024x791.png" alt="¿Qué es Invertir?">
+            <h4>Consultas con Profesionales:</h4>
+            <p>En algunos casos, puede ser útil consultar con un asesor financiero. Un profesional puede ofrecerte consejos personalizados y ayudarte a crear un plan financiero adaptado a tus necesidades y objetivos.</p>
+            <img class="imagen" src="https://becasycursosperu.com/wp-content/uploads/2023/04/La-Educacion-Financiera-en-Peru.webp" alt="¿Qué es Invertir?">
+            <h3>Hábitos Saludables</h3>
+            <h4>Mentalidad Positiva:</h4>
+            <p>Mantener una mentalidad positiva hacia tus finanzas puede tener un impacto significativo en tu bienestar financiero. Enfócate en lo que puedes controlar y celebra tus logros financieros, grandes o pequeños.</p>
+            <img class="imagen" src="https://stakeholders.com.pe/wp-content/uploads/2021/06/educacion-financiera-para-negocios-de-bajos-recursos3.jpg" alt="¿Qué es Invertir?">
+            <h4>Revisión Regular:</h4>
+            <p>Revisa tus finanzas regularmente para asegurarte de que estás en el camino correcto hacia tus metas. Ajusta tu presupuesto y tus planes de ahorro según sea necesario para mantenerte alineado con tus objetivos.</p>
+            <img class="imagen" src="https://crisfe.org/images/w_1024,f_jpeg/large/educacion-financiera-fundamental-para-la-vida-diaria.jpeg" alt="¿Qué es Invertir?">
+            <h3>Herramientas y Recursos</h3>
+            <h4>Calculadora de Presupuesto:</h4>
+            <p>Utiliza una calculadora de presupuesto para ayudarte a planificar y ajustar tus gastos. Estas herramientas te permiten ver claramente cómo se distribuye tu dinero y dónde puedes hacer mejoras.</p>
+            <img class="imagen" src="https://ojo.pe/resizer/v2/N2FUU3DGRJHQBODZXKKN3YCWA4.jpg?auth=8df9cfc4b1ee0de6ac19bdd72d35429faf1ca2b9c21b58feedbde8a5c9a6595e&width=580&height=330&quality=75&smart=true" alt="¿Qué es Invertir?">
+            <h4>Planificador de Ahorros:</h4>
+            <p>Un planificador de ahorros te ayudará a rastrear y alcanzar tus metas de ahorro. Usa una hoja de cálculo o una aplicación en línea para gestionar tus ahorros y monitorear tu progreso.</p>
+            <img class="imagen" src="https://media.licdn.com/dms/image/D4E12AQERA-typiJYbA/article-inline_image-shrink_400_744/0/1695736229468?e=1726099200&v=beta&t=emx1drxFM4sGnYQ1i5DMqYwZmLvzFSkozcwG7MTI7z8" alt="¿Qué es Invertir?">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Finanzas Personales</p>
+    </footer>
+</body>
+</html>

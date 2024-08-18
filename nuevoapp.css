@@ -1,0 +1,131 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+}
+
+header {
+    background: #092327;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 1000px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    background: #007bff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+button.secondary {
+    background: #6c757d;
+}
+
+button.active {
+    background: #0056b3;
+}
+
+footer {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+}
+
+h2 {
+    color: #060606;
+}
+
+h3 {
+    color: #292828;
+}
+
+h4 {
+    color: #434444;
+}
+
+ul {
+    padding: 0;
+    list-style-type: disc;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-section {
+    margin-top: 2rem;
+}
+
+.imagen {
+    width: 600px;
+    height: 400px;
+}
